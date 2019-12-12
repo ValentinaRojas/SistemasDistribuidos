@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+    <meta charset="utf-8">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+            <h1>CHAT</h1>
+    </div>
+          <div class="formulario">
+            <h2>Iniciar Sesion</h2>
+            <form action="/logueo" method="post">
+              <input type="text" name="user" placeholder="Usuario" required>
+              <input type="password" name="contrasena" placeholder="Contraseña" required>
+              <input type="submit" value="Iniciar Sesion">
+            </form>
+          </div>
+
+          <div class="formulario">
+            <h3>Crea tu cuenta</h3>
+            <form action="/registro" method="post">
+              <input type="text" name="name" placeholder="Nombres" required>
+              <input type="text" name="lastname" placeholder="Apellidos" required>
+              <input type="email" name="email" placeholder="Correo Electronico" required>
+              <input type="password" name="pass" placeholder="Contraseña" required>
+              <input type="text" name="age" placeholder="Edad" required>
+              <input type="text" name ="gen" placeholder="Genero" required>
+
+              <input type="submit" value="Registrarse">
+            </form>
+          </div>
+        </div>
+    </div>
+    <script src="/static/js/jquery-1.12.1.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+  </body>
+</html>

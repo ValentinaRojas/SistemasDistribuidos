@@ -1,36 +1,65 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>CHAT</title>
   </head>
   <body>
     <div class="container">
             <h1>CHAT</h1>
+
+    <div class="formulario">
+      <h2>Iniciar Sesion</h2>
+      <form action="/logueo" method="post">
+        <input style="margin:5px" type="text" class="form-control" name="user" placeholder="Usuario" required>
     </div>
-          <div class="formulario">
-            <h2>Iniciar Sesion</h2>
-            <form action="/logueo" method="post">
-              <input type="text" name="user" placeholder="Usuario" required>
-              <input type="password" name="contrasena" placeholder="Contraseña" required>
-              <input type="submit" value="Iniciar Sesion">
-            </form>
-          </div>
+    <div class="formulario">
+        <input style="margin:5px" type="password" class="form-control" name="contrasena" placeholder="Contraseña" required>
+      <button style="margin:10px" type="submit" class="btn btn-success">Inicar Sesion</button>
+      </form>
+    </div>
 
-          <div class="formulario">
-            <h3>Crea tu cuenta</h3>
-            <form action="/registro" method="post">
-              <input type="text" name="name" placeholder="Nombres" required>
-              <input type="text" name="lastname" placeholder="Apellidos" required>
-              <input type="email" name="email" placeholder="Correo Electronico" required>
-              <input type="password" name="pass" placeholder="Contraseña" required>
-              <input type="text" name="age" placeholder="Edad" required>
-              <input type="text" name ="gen" placeholder="Genero" required>
 
-              <input type="submit" value="Registrarse">
-            </form>
-          </div>
+<!-- Registro-->
+
+    <div class="formulario">
+      <h2>Registrarse</h2>
+      <form action="/registro" method="post">
+        <input style="margin:5px" type="text" class="form-control" name="name" placeholder="Nombres" required>
+    </div>
+        <div class="formulario">
+            <input style="margin:5px" type="text" class="form-control" name="lastname" placeholder="Apellidos" required>
         </div>
+        <div class="formulario">
+            <input style="margin:5px" type="email" class="form-control" name="email" placeholder="Correo Electronico" required>
+        </div>
+        <div class="formulario">
+            <input style="margin:5px" type="password" class="form-control" name="pass" placeholder="Contraseña" required>
+        </div>
+        <div class="formulario">
+            <input style="margin:5px" type="text" class="form-control" name="age" placeholder="Edad" required>
+        </div>
+        <div class="formulario">
+            <input style="margin:5px" type="text" class="form-control" name="gen" placeholder="Genero" required>
+            <button style="margin:10px" type="submit" class="btn btn-danger">Registrarse</button>
+      </form>
     </div>
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
